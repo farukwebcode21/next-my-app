@@ -13,6 +13,17 @@ const DashboardLayout = ({ children }) => {
           <Link href={"/login"}>Login</Link>
         </ul>
       </nav>
+      <div className="flex">
+        <div className="h-screen  bg-black w-[15vw] text-white text-2xl">
+          <ul className="pt-5 flex flex-col gap-3mt-5 px-10 space-y-8 py-5">
+            <Link href={"/dashboard"}>Dashboard</Link>
+            <Link href={"/dashboard/credits"}>Credits</Link>
+            <Link href={"/dashboard/profile"}>Profile</Link>
+            <Link href={"/dashboard/payment"}>Payment</Link>
+          </ul>
+        </div>
+        <div className="p-4"> {children}</div>
+      </div>
     </div>
   );
 };
